@@ -1,0 +1,17 @@
+
+.timeButtons {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    position: relative;
+}
+
+.input {
+    margin-left: 1.5rem;
+    width: 250px;
+}
+
+.lineChart {
+    margin: 4rem 1rem auto;
+    max-width: 1250px;
+}
