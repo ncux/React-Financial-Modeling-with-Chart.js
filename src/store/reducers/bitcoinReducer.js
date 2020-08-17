@@ -2,8 +2,8 @@ import { SET_LOADING, SET_DATA, ERROR_FETCHING_DATA } from "../types";
 
 const InitialState = {
     loading: false,
-    data: null,
-    error: null
+    data: {},
+    error: ''
 };
 
 export default (state=InitialState, { type, payload }) => {
@@ -28,7 +28,8 @@ export default (state=InitialState, { type, payload }) => {
             return {
                 ...state,
                 loading: false,
-                error: payload
+                data: {},
+                error: `There was a problem: ${payload}`
             };
 
         default:

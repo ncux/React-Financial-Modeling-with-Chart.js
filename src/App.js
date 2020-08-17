@@ -8,6 +8,7 @@ function App() {
   return (
     <Provider store={ store }>
         <div className="App">
+            <h3>BitCoin Financial Modelling</h3>
             <LineChart />
         </div>
     </Provider>
